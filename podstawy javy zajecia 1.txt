@@ -1,0 +1,122 @@
+arek popa 216 /~arekp
+sroda 11-12
+zalozyc repozytorium np git
+
+eclipse/netbeans/notepad ++/intellij
+
+wszystkie nazwy klas piszemy wielka litera
+piszemy po angielsku
+
+bez laczen np. MyFirstClass
+
+zmienna zaczynamy z malej litery
+
+pl.uni.math.jaraBeginning.myThirdCalculator
+
+stworzyc klase kalkulator z 2 zmiennymi i w klasie mythirdcalculator tworzymy obiekt
+
+skrot ctrl+1 w eclipse
+
+
+
+
+package pl.lodz.uni.math.javaBeginning.myThirdCalculator;
+
+public class myThirdCalculator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculator myCalculator = new Calculator(6,7);
+		
+		myCalculator.add();
+		myCalculator.setFirstNumber(10);
+		myCalculator.setSecondNumber(12);
+		myCalculator.getResult();
+		
+		//
+		//
+		Calculator nextGenCalculator = new Calculator();
+		Calculator myCalculatorOne = new Calculator(6,7);
+		Calculator myCalculatorTwo = new Calculator(6,7);
+		
+		
+		
+		
+	}
+
+
+}
+
+
+
+package pl.lodz.uni.math.javaBeginning.myThirdCalculator;
+
+public class Calculator {
+
+	private int firstNumber;
+	private int secondNumber;
+	private int result;
+
+	public Calculator(int firstNumber, int secondNumber) {
+		// TODO Auto-generated constructor stub
+		this.firstNumber = firstNumber;
+		this.secondNumber = secondNumber;
+	}
+
+	public Calculator() {
+		// TODO Auto-generated constructor stub
+		
+	}
+
+	public void add() {
+		// TODO Auto-generated method stub
+		this.result = this.firstNumber + this.secondNumber;
+
+	}
+	public void setFirstNumber(int firstNumber) {
+		this.firstNumber = firstNumber;
+	}
+	public void setSecondNumber(int secondNumber) {
+		this.secondNumber = secondNumber;
+	}
+	
+	public int getResult() {
+		return result;
+	}
+	
+	
+
+}
+
+
+class A
+{
+
+public void A(){}
+
+} bardzo dobry konstruktor bez argumentowy ktory przejdzie do bytecodu
+
+
+
+class A{
+
+public A(int x){
+
+}
+
+
+} w tym przypadku nie bedzie konstruktora  bez argumentowego w byte codzie
+
+
+
+
+
+
+
+
+
+
+
